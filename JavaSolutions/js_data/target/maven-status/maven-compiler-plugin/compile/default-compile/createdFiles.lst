@@ -1,0 +1,10 @@
+com\js\model\FeesDto.class
+com\js\repository\LoginRepository.class
+com\js\repository\RegistrationRepository.class
+com\js\model\RegistrationDto.class
+com\js\model\LoginDto.class
+com\js\repository\FeesStatusRepository.class
+com\js\repository\MarqueRepository.class
+com\js\model\AddMarqueDto.class
+com\js\repository\EnterFeesStatusRepository.class
+com\js\repository\WelcomeRepository.class

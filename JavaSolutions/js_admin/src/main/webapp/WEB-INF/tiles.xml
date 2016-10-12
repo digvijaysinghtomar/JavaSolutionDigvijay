@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tilles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- Scenario 1 for baseTemplate -->
+
+	<definition name="baseTemplate" id="baseTemplate" template="/WEB-INF/layout/baseLayout.jsp">
+		<put-attribute name="title" value="JavaSolutions" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="${body}"/>
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="baseTemplate2" id="baseTemplate2" template="/WEB-INF/layout/baseLayout2.jsp">
+		<put-attribute name="title" value="JavaSolutions" />
+		<put-attribute name="header2" value="/WEB-INF/layout/header2.jsp" />
+		<put-attribute name="body" value="${body}"/>
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<!-- Scenario 2 for baseTemplate -->
+
+	<!-- <definition name="mainTemplate" id="mainTemplate" template="/WEB-INF/layout/mainLayout.jsp"> 
+		<put-attribute name="title" value="OnlineTest" /> <put-attribute name="header" 
+		value="/WEB-INF/layout/header.jsp" /> <put-attribute name="body" value="${body}" 
+		/> <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" /> </definition> -->
+
+	<!-- Scenario 3 for baseTemplate -->
+
+	<!-- <definition name="mainTemplate" id="mainTemplate" template="/WEB-INF/layout/mainLayout.jsp"> 
+		</definition> -->
+
+	<!-- Mapping for Login Page -->
+
+	 <definition name="adminLogin" id="login" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/adminLogin.jsp" />
+		<put-attribute name="title" type="string" value="adminLogin" />
+	</definition>
+		<definition name="welcome" id="welcome" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+		<put-attribute name="title" type="string" value="Login" />
+	</definition> 
+	<definition name="registrationDetail" id="registration" extends="baseTemplate2">
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationDetail.jsp" />
+		<put-attribute name="title" type="string" value="registrationDetail" />
+	</definition>
+	<definition name="feesStatus" id="feesStatus" extends="baseTemplate2">
+		<put-attribute name="body" value="/WEB-INF/jsp/feesStatus.jsp" />
+		<put-attribute name="title" type="string" value="feesStatus" />
+	</definition>
+	<definition name="EnterFeesEmi" id="EnterFeesEmi" extends="baseTemplate2">
+		<put-attribute name="body" value="/WEB-INF/jsp/EnterFeesEmi.jsp" />
+		<put-attribute name="title" type="string" value="EnterFeesEmi" />
+	</definition>
+	<definition name="addMarque" id="addMarque" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addMarque.jsp" />
+		<put-attribute name="title" type="string" value="addMarque" />
+	</definition>
+	<definition name="adminDashboard" id="adminDashboard" extends="baseTemplate2">
+		<put-attribute name="body" value="/WEB-INF/jsp/adminDashboard.jsp" />
+		<put-attribute name="title" type="string" value="adminDashboard" />
+	</definition>
+	
+</tiles-definitions>

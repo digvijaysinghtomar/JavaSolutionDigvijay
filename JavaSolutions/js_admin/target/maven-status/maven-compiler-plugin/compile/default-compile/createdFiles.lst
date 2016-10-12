@@ -1,0 +1,5 @@
+com\js\adminController\FeesStatusController.class
+com\js\adminController\AdminLoginController.class
+com\js\adminController\EnterFeesStatusController.class
+com\js\adminController\MarqueController.class
+com\js\adminController\RegistrationDetailController.class

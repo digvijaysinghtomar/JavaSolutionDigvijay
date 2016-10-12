@@ -1,0 +1,4 @@
+com\js\controller\LoginController.class
+com\js\validator\RegistrationValidator.class
+com\js\controller\RegistrationController.class
+com\js\controller\WelcomeController.class

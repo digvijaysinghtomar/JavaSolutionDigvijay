@@ -1,0 +1,6 @@
+com\js\service\MarqueService.class
+com\js\service\EnterFeesStatusService.class
+com\js\service\LoginService.class
+com\js\service\RegistrationService.class
+com\js\service\WelcomeService.class
+com\js\service\FeesStatusService.class

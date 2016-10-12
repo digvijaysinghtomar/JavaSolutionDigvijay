@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tilles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- Scenario 1 for baseTemplate -->
+
+	<definition name="baseTemplate" id="baseTemplate" template="/WEB-INF/layout/baseLayout.jsp">
+		<put-attribute name="title" value="JavaSolutions" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="${body}"/>
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="baseTemplate2" id="baseTemplate2" template="/WEB-INF/layout/welcomeLayout.jsp">
+		<put-attribute name="title" value="JavaSolutions" />
+		
+		<put-attribute name="body" value="${body}"/>
+		
+	</definition>
+
+	<!-- Scenario 2 for baseTemplate -->
+
+	<!-- <definition name="mainTemplate" id="mainTemplate" template="/WEB-INF/layout/mainLayout.jsp"> 
+		<put-attribute name="title" value="OnlineTest" /> <put-attribute name="header" 
+		value="/WEB-INF/layout/header.jsp" /> <put-attribute name="body" value="${body}" 
+		/> <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" /> </definition> -->
+
+	<!-- Scenario 3 for baseTemplate -->
+
+	<!-- <definition name="mainTemplate" id="mainTemplate" template="/WEB-INF/layout/mainLayout.jsp"> 
+		</definition> -->
+
+	<!-- Mapping for Login Page -->
+
+	 <definition name="login" id="login" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+		<put-attribute name="title" type="string" value="Login" />
+	</definition>
+		<definition name="welcome" id="welcome" extends="baseTemplate2">
+		<put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+		<put-attribute name="title" type="string" value="welcome" />
+	</definition> 
+	<definition name="registration" id="registration" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/registration.jsp" />
+		<put-attribute name="title" type="string" value="Login" />
+	</definition>
+	
+</tiles-definitions>
